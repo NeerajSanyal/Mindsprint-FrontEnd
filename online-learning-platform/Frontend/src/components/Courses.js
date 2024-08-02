@@ -21,7 +21,7 @@ import {
     fetchVideos();
   }, []);
   return (
-    <div style={{backgroundColor: "silver"}}>
+    <div style={{backgroundColor: "white"}}>
       <h1 className="text-danger text-center" >
         List of available Courses for free
       </h1>

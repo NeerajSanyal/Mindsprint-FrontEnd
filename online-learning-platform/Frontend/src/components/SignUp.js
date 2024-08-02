@@ -10,7 +10,6 @@ const SignUp = () => {
   const [failedMessage, setFailedMessage] = useState('');
 
   const navigate = useNavigate();
- // const history = useHistory(); // Get the history object
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
@@ -26,7 +25,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-   // Send the data to your Spring Boot API
+   
     fetch('http://localhost:8083/api/signUp', {
       method: 'POST',
       headers: {
@@ -36,13 +35,13 @@ const SignUp = () => {
     })
       .then((response) => {
         if (response.status === 200) {
-            // Show success message on the form
+           
             setSuccessMessage('User created successfully');
         }
         return response.json();
       })
       .then((data) => {
-        // Handle the data from the response
+      
         console.log(data);
       })
       .catch((error) => {

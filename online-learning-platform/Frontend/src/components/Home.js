@@ -32,7 +32,7 @@ const Home = () => {
           <a class="nav-link active" href="/SignUp">User SignUp</a>
         </li>
         <li class="nav-item" style={{marginLeft:'20px'}}>
-          <a class="nav-link active" href="/adminLogin">Admin LogIn</a>
+          <a class="nav-link active" href="/adminPass">Admin LogIn</a>
         </li>
         {/* <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -101,7 +101,7 @@ const Home = () => {
     // color="primary"
     inverse
     style={{
-      width: '18rem',
+      width: '20rem',
       margin:'auto',
       // backgroundColor: 'rgb(139, 244, 244)'
      
@@ -127,7 +127,7 @@ const Home = () => {
     // color="primary"
     inverse
     style={{
-      width: '18rem',
+      width: '20rem',
       margin:'auto',
       // backgroundColor: 'rgb(139, 244, 244)'
     }}
@@ -152,7 +152,7 @@ const Home = () => {
     // color="primary"
     inverse
     style={{
-      width: '18rem',
+      width: '20rem',
       margin:'auto',
       // backgroundColor: 'rgb(139, 244, 244)'
     }}

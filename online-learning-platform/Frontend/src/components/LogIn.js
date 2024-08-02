@@ -23,7 +23,7 @@ const LogIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send the data to your Spring Boot API
+
     fetch('http://localhost:8083/api/logIn', {
       method: 'POST',
       headers: {
@@ -33,7 +33,7 @@ const LogIn = () => {
     })
       .then((response) => {
         if (response.status === 200) {
-          // Show success message on the form
+        
           setSuccessMessage('Login successful');
           navigate("/courses");
 
@@ -41,7 +41,7 @@ const LogIn = () => {
         return response.json();
       })
       .then((data) => {
-        // Handle the data from the response
+     
         console.log(data);
       })
       .catch((error) => {

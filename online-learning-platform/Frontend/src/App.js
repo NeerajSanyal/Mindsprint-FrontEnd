@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Course from './components/Courses';
 import AdminLogin from './components/AdminLogin';
 import CourseCrud from './components/CourseCrud';
-
+import AdminPass from './components/AdminPass';
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
           <Route exact path="/login" element={<LogIn/>}/>
           <Route exact path="/signup" element={<SignUp/>}/>
           <Route exact path="/courses" element={<Course/>}/>
+          <Route exact path="/adminpass" element={<AdminPass/>}/>
           <Route exact path="/adminlogin" element={<AdminLogin/>}/>
           <Route exact path="/managecourse" element={<CourseCrud/>}/>
           
